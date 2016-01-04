@@ -13,6 +13,32 @@
 		C37504FE1B2DCAAC00B0C1D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C37504FD1B2DCAAC00B0C1D4 /* Images.xcassets */; };
 		C37505011B2DCAAC00B0C1D4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C37504FF1B2DCAAC00B0C1D4 /* LaunchScreen.xib */; };
 		C375050D1B2DCAAC00B0C1D4 /* Jinro_Wa_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C375050C1B2DCAAC00B0C1D4 /* Jinro_Wa_Tests.swift */; };
+		C37505181B2DCB6700B0C1D4 /* matsu_000.png in Resources */ = {isa = PBXBuildFile; fileRef = C37505171B2DCB6700B0C1D4 /* matsu_000.png */; };
+		C38376521B345E1300C10A71 /* startbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = C38376511B345E1300C10A71 /* startbtn.png */; };
+		C38376581B3462EC00C10A71 /* btn3.png in Resources */ = {isa = PBXBuildFile; fileRef = C38376531B3462EC00C10A71 /* btn3.png */; };
+		C38376591B3462EC00C10A71 /* btn4.png in Resources */ = {isa = PBXBuildFile; fileRef = C38376541B3462EC00C10A71 /* btn4.png */; };
+		C383765A1B3462EC00C10A71 /* btn5.png in Resources */ = {isa = PBXBuildFile; fileRef = C38376551B3462EC00C10A71 /* btn5.png */; };
+		C383765B1B3462EC00C10A71 /* btn6.png in Resources */ = {isa = PBXBuildFile; fileRef = C38376561B3462EC00C10A71 /* btn6.png */; };
+		C383765C1B3462EC00C10A71 /* btn7.png in Resources */ = {isa = PBXBuildFile; fileRef = C38376571B3462EC00C10A71 /* btn7.png */; };
+		C383765E1B34643600C10A71 /* settingend.png in Resources */ = {isa = PBXBuildFile; fileRef = C383765D1B34643600C10A71 /* settingend.png */; };
+		C38376601B3465A300C10A71 /* cardback.png in Resources */ = {isa = PBXBuildFile; fileRef = C383765F1B3465A300C10A71 /* cardback.png */; };
+		C38376621B34662900C10A71 /* rolebtn.png in Resources */ = {isa = PBXBuildFile; fileRef = C38376611B34662900C10A71 /* rolebtn.png */; };
+		C38376641B3466F400C10A71 /* roledone.png in Resources */ = {isa = PBXBuildFile; fileRef = C38376631B3466F400C10A71 /* roledone.png */; };
+		C38376661B34671300C10A71 /* btntemp.png in Resources */ = {isa = PBXBuildFile; fileRef = C38376651B34671300C10A71 /* btntemp.png */; };
+		C38376681B34692F00C10A71 /* talkend.png in Resources */ = {isa = PBXBuildFile; fileRef = C38376671B34692F00C10A71 /* talkend.png */; };
+		C383766A1B346C4F00C10A71 /* winimg.png in Resources */ = {isa = PBXBuildFile; fileRef = C38376691B346C4F00C10A71 /* winimg.png */; };
+		C38376721B346D9900C10A71 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383766B1B346D9900C10A71 /* ActionViewController.swift */; };
+		C38376731B346D9900C10A71 /* ExecutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383766C1B346D9900C10A71 /* ExecutionViewController.swift */; };
+		C38376741B346D9900C10A71 /* PlayerNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383766D1B346D9900C10A71 /* PlayerNameViewController.swift */; };
+		C38376751B346D9900C10A71 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383766E1B346D9900C10A71 /* ResultViewController.swift */; };
+		C38376761B346D9900C10A71 /* RoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383766F1B346D9900C10A71 /* RoleViewController.swift */; };
+		C38376771B346D9900C10A71 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38376701B346D9900C10A71 /* SettingViewController.swift */; };
+		C38376781B346D9900C10A71 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38376711B346D9900C10A71 /* TimerViewController.swift */; };
+		C383767E1B346E2B00C10A71 /* teruteru.png in Resources */ = {isa = PBXBuildFile; fileRef = C38376791B346E2B00C10A71 /* teruteru.png */; };
+		C383767F1B346E2B00C10A71 /* theaf.png in Resources */ = {isa = PBXBuildFile; fileRef = C383767A1B346E2B00C10A71 /* theaf.png */; };
+		C38376801B346E2B00C10A71 /* jinro.png in Resources */ = {isa = PBXBuildFile; fileRef = C383767B1B346E2B00C10A71 /* jinro.png */; };
+		C38376811B346E2B00C10A71 /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = C383767C1B346E2B00C10A71 /* people.png */; };
+		C38376821B346E2B00C10A71 /* uranai.png in Resources */ = {isa = PBXBuildFile; fileRef = C383767D1B346E2B00C10A71 /* uranai.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +62,32 @@
 		C37505061B2DCAAC00B0C1D4 /* Jinro-Wa-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jinro-Wa-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C375050B1B2DCAAC00B0C1D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C375050C1B2DCAAC00B0C1D4 /* Jinro_Wa_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jinro_Wa_Tests.swift; sourceTree = "<group>"; };
+		C37505171B2DCB6700B0C1D4 /* matsu_000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = matsu_000.png; sourceTree = "<group>"; };
+		C38376511B345E1300C10A71 /* startbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startbtn.png; sourceTree = "<group>"; };
+		C38376531B3462EC00C10A71 /* btn3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn3.png; sourceTree = "<group>"; };
+		C38376541B3462EC00C10A71 /* btn4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn4.png; sourceTree = "<group>"; };
+		C38376551B3462EC00C10A71 /* btn5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn5.png; sourceTree = "<group>"; };
+		C38376561B3462EC00C10A71 /* btn6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn6.png; sourceTree = "<group>"; };
+		C38376571B3462EC00C10A71 /* btn7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn7.png; sourceTree = "<group>"; };
+		C383765D1B34643600C10A71 /* settingend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingend.png; sourceTree = "<group>"; };
+		C383765F1B3465A300C10A71 /* cardback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardback.png; sourceTree = "<group>"; };
+		C38376611B34662900C10A71 /* rolebtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rolebtn.png; sourceTree = "<group>"; };
+		C38376631B3466F400C10A71 /* roledone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roledone.png; sourceTree = "<group>"; };
+		C38376651B34671300C10A71 /* btntemp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btntemp.png; sourceTree = "<group>"; };
+		C38376671B34692F00C10A71 /* talkend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = talkend.png; sourceTree = "<group>"; };
+		C38376691B346C4F00C10A71 /* winimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = winimg.png; sourceTree = "<group>"; };
+		C383766B1B346D9900C10A71 /* ActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		C383766C1B346D9900C10A71 /* ExecutionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExecutionViewController.swift; sourceTree = "<group>"; };
+		C383766D1B346D9900C10A71 /* PlayerNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerNameViewController.swift; sourceTree = "<group>"; };
+		C383766E1B346D9900C10A71 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		C383766F1B346D9900C10A71 /* RoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleViewController.swift; sourceTree = "<group>"; };
+		C38376701B346D9900C10A71 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		C38376711B346D9900C10A71 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		C38376791B346E2B00C10A71 /* teruteru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teruteru.png; sourceTree = "<group>"; };
+		C383767A1B346E2B00C10A71 /* theaf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theaf.png; sourceTree = "<group>"; };
+		C383767B1B346E2B00C10A71 /* jinro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jinro.png; sourceTree = "<group>"; };
+		C383767C1B346E2B00C10A71 /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = people.png; sourceTree = "<group>"; };
+		C383767D1B346E2B00C10A71 /* uranai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uranai.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +111,7 @@
 		C37504E81B2DCAAC00B0C1D4 = {
 			isa = PBXGroup;
 			children = (
+				C37505161B2DCB0B00B0C1D4 /* imgs */,
 				C37504F31B2DCAAC00B0C1D4 /* Jinro-Wa- */,
 				C37505091B2DCAAC00B0C1D4 /* Jinro-Wa-Tests */,
 				C37504F21B2DCAAC00B0C1D4 /* Products */,
@@ -77,6 +130,13 @@
 		C37504F31B2DCAAC00B0C1D4 /* Jinro-Wa- */ = {
 			isa = PBXGroup;
 			children = (
+				C383766B1B346D9900C10A71 /* ActionViewController.swift */,
+				C383766C1B346D9900C10A71 /* ExecutionViewController.swift */,
+				C383766D1B346D9900C10A71 /* PlayerNameViewController.swift */,
+				C383766E1B346D9900C10A71 /* ResultViewController.swift */,
+				C383766F1B346D9900C10A71 /* RoleViewController.swift */,
+				C38376701B346D9900C10A71 /* SettingViewController.swift */,
+				C38376711B346D9900C10A71 /* TimerViewController.swift */,
 				C37504F61B2DCAAC00B0C1D4 /* AppDelegate.swift */,
 				C37504F81B2DCAAC00B0C1D4 /* ViewController.swift */,
 				C37504FA1B2DCAAC00B0C1D4 /* Main.storyboard */,
@@ -110,6 +170,32 @@
 				C375050B1B2DCAAC00B0C1D4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C37505161B2DCB0B00B0C1D4 /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				C37505171B2DCB6700B0C1D4 /* matsu_000.png */,
+				C38376511B345E1300C10A71 /* startbtn.png */,
+				C383765D1B34643600C10A71 /* settingend.png */,
+				C38376531B3462EC00C10A71 /* btn3.png */,
+				C38376631B3466F400C10A71 /* roledone.png */,
+				C38376791B346E2B00C10A71 /* teruteru.png */,
+				C383767A1B346E2B00C10A71 /* theaf.png */,
+				C383767B1B346E2B00C10A71 /* jinro.png */,
+				C383767C1B346E2B00C10A71 /* people.png */,
+				C383767D1B346E2B00C10A71 /* uranai.png */,
+				C38376691B346C4F00C10A71 /* winimg.png */,
+				C383765F1B3465A300C10A71 /* cardback.png */,
+				C38376541B3462EC00C10A71 /* btn4.png */,
+				C38376551B3462EC00C10A71 /* btn5.png */,
+				C38376651B34671300C10A71 /* btntemp.png */,
+				C38376671B34692F00C10A71 /* talkend.png */,
+				C38376611B34662900C10A71 /* rolebtn.png */,
+				C38376561B3462EC00C10A71 /* btn6.png */,
+				C38376571B3462EC00C10A71 /* btn7.png */,
+			);
+			name = imgs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,11 +242,13 @@
 		C37504E91B2DCAAC00B0C1D4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = OtsukaHiromichi;
 				TargetAttributes = {
 					C37504F01B2DCAAC00B0C1D4 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = ATJJU93UE7;
 					};
 					C37505051B2DCAAC00B0C1D4 = {
 						CreatedOnToolsVersion = 6.3;
@@ -192,8 +280,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C38376591B3462EC00C10A71 /* btn4.png in Resources */,
+				C38376681B34692F00C10A71 /* talkend.png in Resources */,
+				C383767E1B346E2B00C10A71 /* teruteru.png in Resources */,
+				C38376641B3466F400C10A71 /* roledone.png in Resources */,
+				C38376811B346E2B00C10A71 /* people.png in Resources */,
 				C37504FC1B2DCAAC00B0C1D4 /* Main.storyboard in Resources */,
+				C383766A1B346C4F00C10A71 /* winimg.png in Resources */,
+				C38376621B34662900C10A71 /* rolebtn.png in Resources */,
+				C38376601B3465A300C10A71 /* cardback.png in Resources */,
+				C383765B1B3462EC00C10A71 /* btn6.png in Resources */,
+				C38376821B346E2B00C10A71 /* uranai.png in Resources */,
+				C37505181B2DCB6700B0C1D4 /* matsu_000.png in Resources */,
+				C38376581B3462EC00C10A71 /* btn3.png in Resources */,
+				C38376801B346E2B00C10A71 /* jinro.png in Resources */,
+				C383765A1B3462EC00C10A71 /* btn5.png in Resources */,
+				C383765C1B3462EC00C10A71 /* btn7.png in Resources */,
+				C383767F1B346E2B00C10A71 /* theaf.png in Resources */,
+				C38376661B34671300C10A71 /* btntemp.png in Resources */,
+				C383765E1B34643600C10A71 /* settingend.png in Resources */,
 				C37505011B2DCAAC00B0C1D4 /* LaunchScreen.xib in Resources */,
+				C38376521B345E1300C10A71 /* startbtn.png in Resources */,
 				C37504FE1B2DCAAC00B0C1D4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +320,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C37504F91B2DCAAC00B0C1D4 /* ViewController.swift in Sources */,
+				C38376781B346D9900C10A71 /* TimerViewController.swift in Sources */,
 				C37504F71B2DCAAC00B0C1D4 /* AppDelegate.swift in Sources */,
+				C38376761B346D9900C10A71 /* RoleViewController.swift in Sources */,
+				C38376771B346D9900C10A71 /* SettingViewController.swift in Sources */,
+				C38376721B346D9900C10A71 /* ActionViewController.swift in Sources */,
+				C38376731B346D9900C10A71 /* ExecutionViewController.swift in Sources */,
+				C38376741B346D9900C10A71 /* PlayerNameViewController.swift in Sources */,
+				C38376751B346D9900C10A71 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,20 +453,30 @@
 		C37505111B2DCAAD00B0C1D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Jinro-Wa-/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		C37505121B2DCAAD00B0C1D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hiromichi Otsuka (ATJJU93UE7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hiromichi Otsuka (ATJJU93UE7)";
 				INFOPLIST_FILE = "Jinro-Wa-/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -409,6 +533,7 @@
 				C37505121B2DCAAD00B0C1D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C37505131B2DCAAD00B0C1D4 /* Build configuration list for PBXNativeTarget "Jinro-Wa-Tests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +542,7 @@
 				C37505151B2DCAAD00B0C1D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

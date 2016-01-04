@@ -13,9 +13,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    // Override point for customization after application launch.
+    var Counter: Int?
+    var CardNum:[Int] = []
+    var PlayerNames:[NSString] = ["プレイヤー1","プレイヤー2","プレイヤー3","プレイヤー4",
+        "プレイヤー5","プレイヤー6","プレイヤー7"]
+    var PlayerRoles:[NSString] = ["村人","無し","無し","無し","無し","無し","無し"]
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+                    // Override point for customization after application launch.
+            //UserDefaultに初回起動時用のフラグを格納
+            let defaults = NSUserDefaults.standardUserDefaults();
+            var dic = ["TalkTime" : 5, "PlayerNum" : 3, "isShort" : false, "isTeruTeru" : true, "PlayerNames" : PlayerNames, "PlayerRoles" : PlayerRoles]
+            defaults.registerDefaults(dic as [NSObject : AnyObject])
+            
+
         return true
     }
 

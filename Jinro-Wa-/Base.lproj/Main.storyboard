@@ -1,25 +1,978 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="s0y-xr-mUh">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--ぷち人狼〜和〜-->
+        <scene sceneID="hKs-VV-gXF">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JH5-zb-ct3" customClass="ViewController" customModule="Jinro_Wa_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="uHC-dJ-ani"/>
+                        <viewControllerLayoutGuide type="bottom" id="rO5-Rr-jdV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="2tj-bI-cub">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N4r-B7-VzV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="matsu_000.png" translatesAutoresizingMaskIntoConstraints="NO" id="fpa-zh-szC">
+                                        <rect key="frame" x="0.0" y="32" width="927" height="536"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z67-Gn-UvD">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                            </adBannerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nv4-5c-a5V">
+                                <rect key="frame" x="16" y="238" width="288" height="91"/>
+                                <state key="normal" image="startbtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sPS-P7-xrW" kind="show" id="iiY-hh-xqV"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="ぷち人狼〜和〜" id="fCK-pL-KEP"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="adivew" destination="Z67-Gn-UvD" id="hi5-g4-TiN"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8AS-av-aa9" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="576" y="323"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xZY-Ye-oic">
+            <objects>
+                <navigationController id="s0y-xr-mUh" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="77m-2K-Jts">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JH5-zb-ct3" kind="relationship" relationship="rootViewController" id="p34-2I-yJp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o81-VZ-ih8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160" y="323"/>
+        </scene>
+        <!--設定-->
+        <scene sceneID="2FA-Hv-0IS">
+            <objects>
+                <viewController id="sPS-P7-xrW" customClass="SettingViewController" customModule="Jinro_Wa_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N4O-UY-Wz7"/>
+                        <viewControllerLayoutGuide type="bottom" id="siy-F6-dCD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iLY-fc-8me">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3N5-ca-6z7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="matsu_000.png" translatesAutoresizingMaskIntoConstraints="NO" id="lJy-Wo-tJf">
+                                        <rect key="frame" x="-119" y="32" width="927" height="536"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Bc-Xo-BSz">
+                                <rect key="frame" x="19" y="287" width="87" height="61"/>
+                                <state key="normal" image="btn3.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="PlayNumBtn:" destination="sPS-P7-xrW" eventType="touchUpInside" id="VjB-mH-Icb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oM9-LE-kJX">
+                                <rect key="frame" x="217" y="287" width="87" height="61"/>
+                                <state key="normal" image="btn5.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="PlayNumBtn:" destination="sPS-P7-xrW" eventType="touchUpInside" id="1CV-pf-It5"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iZz-96-G6C">
+                                <rect key="frame" x="19" y="156" width="285" height="29"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="五分"/>
+                                    <segment title="十分"/>
+                                    <segment title="十五分"/>
+                                    <segment title="二十分"/>
+                                </segments>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="会議時間" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEu-Wc-XSW">
+                                <rect key="frame" x="105" y="111" width="111" height="37"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="遊戯人数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2r4-6P-N0y">
+                                <rect key="frame" x="105" y="242" width="111" height="37"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHd-sM-tPH">
+                                <rect key="frame" x="117" y="287" width="87" height="61"/>
+                                <state key="normal" image="btn4.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="PlayNumBtn:" destination="sPS-P7-xrW" eventType="touchUpInside" id="x7U-Rn-dPH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMm-M1-Ycj">
+                                <rect key="frame" x="19" y="362" width="87" height="61"/>
+                                <state key="normal" image="btn6.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="PlayNumBtn:" destination="sPS-P7-xrW" eventType="touchUpInside" id="Kee-Qa-hYh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BR2-t8-HID">
+                                <rect key="frame" x="118" y="362" width="87" height="61"/>
+                                <state key="normal" image="btn7.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="PlayNumBtn:" destination="sPS-P7-xrW" eventType="touchUpInside" id="nLX-bC-arf"/>
+                                </connections>
+                            </button>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ri9-zi-vnY">
+                                <rect key="frame" x="1" y="518" width="320" height="50"/>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="設定" id="YSb-CB-XyB"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="adview" destination="ri9-zi-vnY" id="778-Ie-Puz"/>
+                        <outlet property="tmSeg" destination="iZz-96-G6C" id="P2Y-Xo-8IO"/>
+                        <segue destination="dv9-kf-dAi" kind="show" id="nve-Pg-eGz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fDn-vA-N1V" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054.5" y="331.5"/>
+        </scene>
+        <!--設定-->
+        <scene sceneID="cJM-8E-xfq">
+            <objects>
+                <viewController storyboardIdentifier="PlayerNameVC" id="dv9-kf-dAi" customClass="PlayerNameViewController" customModule="Jinro_Wa_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fbb-d4-Lfu"/>
+                        <viewControllerLayoutGuide type="bottom" id="MW7-qY-Gry"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TOK-Cp-tya">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bq8-5o-5B1">
+                                <rect key="frame" x="0.0" y="-1" width="320" height="570"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="matsu_000.png" translatesAutoresizingMaskIntoConstraints="NO" id="iA6-VH-6t0">
+                                        <rect key="frame" x="-150" y="32" width="927" height="536"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gR4-yF-5Zx">
+                                <rect key="frame" x="-3" y="64" width="326" height="506"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="プレイヤー２" borderStyle="bezel" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="GE0-0t-V6L">
+                                        <rect key="frame" x="26" y="101" width="257" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="プレイヤー３" borderStyle="bezel" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="5PU-VG-lIF">
+                                        <rect key="frame" x="26" y="139" width="257" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="プレイヤー４" borderStyle="bezel" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="etx-sa-RZz">
+                                        <rect key="frame" x="26" y="177" width="257" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="プレイヤー５" borderStyle="bezel" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="47Y-KJ-AG4">
+                                        <rect key="frame" x="26" y="215" width="257" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="プレイヤー６" borderStyle="bezel" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="wHe-o5-6Ra">
+                                        <rect key="frame" x="26" y="253" width="257" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="プレイヤー７" borderStyle="bezel" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="UxU-LU-z9g">
+                                        <rect key="frame" x="26" y="291" width="257" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="プレイヤー１" borderStyle="bezel" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ERd-Ut-dkq">
+                                        <rect key="frame" x="26" y="63" width="257" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="遊戯者名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Da3-4b-9CG">
+                                        <rect key="frame" x="99" y="18" width="111" height="37"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUT-1W-ktf">
+                                        <rect key="frame" x="59" y="367" width="190" height="58"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" image="settingend.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SettingFinishBtn:" destination="dv9-kf-dAi" eventType="touchUpInside" id="VBB-SI-h0d"/>
+                                        </connections>
+                                    </button>
+                                    <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Tm-xU-Hcy">
+                                        <rect key="frame" x="3" y="456" width="320" height="50"/>
+                                    </adBannerView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="設定" id="peW-rU-xuR"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="PlayerName1" destination="ERd-Ut-dkq" id="emf-Vq-F02"/>
+                        <outlet property="PlayerName2" destination="GE0-0t-V6L" id="cwo-Na-HH4"/>
+                        <outlet property="PlayerName3" destination="5PU-VG-lIF" id="jXU-HN-Bkg"/>
+                        <outlet property="PlayerName4" destination="etx-sa-RZz" id="sRJ-tF-c1l"/>
+                        <outlet property="PlayerName5" destination="47Y-KJ-AG4" id="ST2-Gh-acH"/>
+                        <outlet property="PlayerName6" destination="wHe-o5-6Ra" id="IHy-mJ-ww9"/>
+                        <outlet property="PlayerName7" destination="UxU-LU-z9g" id="aE7-5P-yFr"/>
+                        <outlet property="ScrollView" destination="gR4-yF-5Zx" id="hJh-Ta-Of2"/>
+                        <outlet property="adview" destination="2Tm-xU-Hcy" id="esi-mj-Eko"/>
+                        <outletCollection property="PNTextViews" destination="ERd-Ut-dkq" collectionClass="NSMutableArray" id="zch-O4-tA1"/>
+                        <outletCollection property="PNTextViews" destination="GE0-0t-V6L" collectionClass="NSMutableArray" id="Zbo-7l-Jgn"/>
+                        <outletCollection property="PNTextViews" destination="5PU-VG-lIF" collectionClass="NSMutableArray" id="4Yp-JY-0xZ"/>
+                        <outletCollection property="PNTextViews" destination="etx-sa-RZz" collectionClass="NSMutableArray" id="evr-qA-gEy"/>
+                        <outletCollection property="PNTextViews" destination="47Y-KJ-AG4" collectionClass="NSMutableArray" id="KXo-ku-xsb"/>
+                        <outletCollection property="PNTextViews" destination="wHe-o5-6Ra" collectionClass="NSMutableArray" id="SIT-5D-Nc9"/>
+                        <outletCollection property="PNTextViews" destination="UxU-LU-z9g" collectionClass="NSMutableArray" id="Hsr-YU-lRe"/>
+                        <segue destination="LaL-rs-JMB" kind="show" id="Kq8-uH-H1M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8R-sG-UEg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1378" y="323"/>
+        </scene>
+        <!--役職決定-->
+        <scene sceneID="Xzh-uG-Jfm">
+            <objects>
+                <viewController storyboardIdentifier="RoleVC" id="LaL-rs-JMB" customClass="RoleViewController" customModule="Jinro_Wa_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uNl-mj-f0M"/>
+                        <viewControllerLayoutGuide type="bottom" id="ttk-6v-Wh1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Any-h0-peH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K0F-fN-wYY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="matsu_000.png" translatesAutoresizingMaskIntoConstraints="NO" id="qRo-eV-Z1P">
+                                        <rect key="frame" x="-303" y="0.0" width="927" height="536"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="matsu_000.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dxb-x8-BKK">
+                                        <rect key="frame" x="-303" y="32" width="927" height="536"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axl-Vo-x3D">
+                                <rect key="frame" x="65" y="458" width="190" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="rolebtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="DoneBtn:" destination="LaL-rs-JMB" eventType="touchUpInside" id="d60-Y6-eeR"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardback.png" translatesAutoresizingMaskIntoConstraints="NO" id="pyK-zS-Zfi">
+                                <rect key="frame" x="25" y="61" width="270" height="380"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="役職決定" id="kOQ-3o-NUV"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="RoleImageView" destination="pyK-zS-Zfi" id="9YN-pD-HGP"/>
+                        <segue destination="w7d-Ia-0ib" kind="show" id="wNq-nX-YQR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Vk-Gb-zci" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1758" y="323"/>
+        </scene>
+        <!--役職別行動-->
+        <scene sceneID="8lO-7a-I9A">
+            <objects>
+                <viewController storyboardIdentifier="ActionVC" id="w7d-Ia-0ib" customClass="ActionViewController" customModule="Jinro_Wa_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Iel-TG-QQV"/>
+                        <viewControllerLayoutGuide type="bottom" id="sle-cU-H57"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ya8-w2-snJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gLi-Uk-wBa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="matsu_000.png" translatesAutoresizingMaskIntoConstraints="NO" id="O5u-F6-daX">
+                                        <rect key="frame" x="-304" y="0.0" width="927" height="536"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="matsu_000.png" translatesAutoresizingMaskIntoConstraints="NO" id="qvt-Yr-JnK">
+                                        <rect key="frame" x="-304" y="32" width="927" height="536"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardback.png" translatesAutoresizingMaskIntoConstraints="NO" id="AxP-05-G9p">
+                                <rect key="frame" x="16" y="126" width="140" height="191"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardback.png" translatesAutoresizingMaskIntoConstraints="NO" id="0sC-Wz-VIU">
+                                <rect key="frame" x="169" y="126" width="140" height="191"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardback.png" translatesAutoresizingMaskIntoConstraints="NO" id="TBp-XF-A0M">
+                                <rect key="frame" x="54" y="32" width="212" height="294"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfV-HQ-Fjb">
+                                <rect key="frame" x="212" y="463" width="104" height="43"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="roledone.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="DoneBtn:" destination="w7d-Ia-0ib" eventType="touchUpInside" id="gbm-4U-KaF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iq5-n1-P7X">
+                                <rect key="frame" x="5" y="330" width="101" height="57"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="btntemp.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnAction:" destination="w7d-Ia-0ib" eventType="touchUpInside" id="dTv-HN-1Y0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Sb-pf-dYu">
+                                <rect key="frame" x="5" y="393" width="101" height="57"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="btntemp.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnAction:" destination="w7d-Ia-0ib" eventType="touchUpInside" id="qUr-ef-8Sv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKd-R7-iq7">
+                                <rect key="frame" x="110" y="393" width="101" height="57"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="btntemp.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnAction:" destination="w7d-Ia-0ib" eventType="touchUpInside" id="N9b-Lw-AKi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0D-VC-dD9">
+                                <rect key="frame" x="214" y="393" width="101" height="57"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="btntemp.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnAction:" destination="w7d-Ia-0ib" eventType="touchUpInside" id="h65-fl-ivh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQm-bW-UAz">
+                                <rect key="frame" x="5" y="456" width="101" height="57"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="btntemp.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnAction:" destination="w7d-Ia-0ib" eventType="touchUpInside" id="5ml-5K-M6v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kY-ZR-YwK">
+                                <rect key="frame" x="110" y="330" width="101" height="57"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="btntemp.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnAction:" destination="w7d-Ia-0ib" eventType="touchUpInside" id="nhd-K7-tnS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvs-D2-6d5">
+                                <rect key="frame" x="214" y="330" width="101" height="57"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="btntemp.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnAction:" destination="w7d-Ia-0ib" eventType="touchUpInside" id="P2u-Af-GOc"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VXj-y4-3kk">
+                                <rect key="frame" x="0.0" y="346" width="320" height="94"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHi-mq-p6S">
+                                        <rect key="frame" x="16" y="37" width="296" height="37"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 味方を探した" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8z-Jh-7hx">
+                                        <rect key="frame" x="83" y="8" width="154" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="0.83999999999999997" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="役職別行動" id="Gtv-Xh-D8p"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="Btn1" destination="Iq5-n1-P7X" id="QFm-LW-T7P"/>
+                        <outlet property="Btn2" destination="7kY-ZR-YwK" id="r1t-UP-zxN"/>
+                        <outlet property="Btn3" destination="jvs-D2-6d5" id="Ieo-vQ-Kf8"/>
+                        <outlet property="Btn4" destination="7Sb-pf-dYu" id="jEq-cM-OcK"/>
+                        <outlet property="Btn5" destination="RKd-R7-iq7" id="uta-cX-tUq"/>
+                        <outlet property="Btn6" destination="g0D-VC-dD9" id="ZO7-Cf-7Mh"/>
+                        <outlet property="Btn7" destination="vQm-bW-UAz" id="KHL-As-x0w"/>
+                        <outlet property="DoneBtn" destination="gfV-HQ-Fjb" id="4FG-Qy-E93"/>
+                        <outlet property="JinroText" destination="HHi-mq-p6S" id="5gJ-cY-nYB"/>
+                        <outlet property="JinroView" destination="VXj-y4-3kk" id="XZQ-Qq-Xf5"/>
+                        <outlet property="RoleImageView" destination="TBp-XF-A0M" id="Zk9-PI-rCa"/>
+                        <outlet property="UranaiView1" destination="AxP-05-G9p" id="iJo-TL-6DY"/>
+                        <outlet property="UranaiView2" destination="0sC-Wz-VIU" id="cI3-fm-89C"/>
+                        <outletCollection property="Buttons" destination="Iq5-n1-P7X" collectionClass="NSMutableArray" id="8gc-61-xMA"/>
+                        <outletCollection property="Buttons" destination="7kY-ZR-YwK" collectionClass="NSMutableArray" id="TuC-bp-p9c"/>
+                        <outletCollection property="Buttons" destination="jvs-D2-6d5" collectionClass="NSMutableArray" id="CmU-Eb-t2S"/>
+                        <outletCollection property="Buttons" destination="7Sb-pf-dYu" collectionClass="NSMutableArray" id="pHN-HV-jxr"/>
+                        <outletCollection property="Buttons" destination="RKd-R7-iq7" collectionClass="NSMutableArray" id="QIr-kc-Dml"/>
+                        <outletCollection property="Buttons" destination="g0D-VC-dD9" collectionClass="NSMutableArray" id="H2t-AX-e3M"/>
+                        <outletCollection property="Buttons" destination="vQm-bW-UAz" collectionClass="NSMutableArray" id="6g5-Fh-hTV"/>
+                        <segue destination="P6n-Jh-FtX" kind="show" id="WVj-Rj-bhj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jj6-Aa-ZVh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1758" y="978"/>
+        </scene>
+        <!--朝-->
+        <scene sceneID="y3Z-P3-SkW">
+            <objects>
+                <viewController storyboardIdentifier="TimerVC" id="P6n-Jh-FtX" customClass="TImerViewController" customModule="Jinro_Wa_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dWN-ED-fMR"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Es-dL-CBh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nJz-Nq-vTi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o1y-Nc-h4j">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="matsu_000.png" translatesAutoresizingMaskIntoConstraints="NO" id="FQO-RS-B1p">
+                                        <rect key="frame" x="-353" y="0.0" width="927" height="536"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="matsu_000.png" translatesAutoresizingMaskIntoConstraints="NO" id="jXi-t7-Fjb">
+                                        <rect key="frame" x="-353" y="32" width="927" height="536"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ilq-zD-X4Q">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                            </adBannerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Reo-pi-6Kx">
+                                <rect key="frame" x="65" y="434" width="190" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="talkend.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="FinishBtn:" destination="P6n-Jh-FtX" eventType="touchUpInside" id="Kys-y8-zHx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwC-Bl-5sn">
+                                <rect key="frame" x="36" y="208" width="249" height="71"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="90"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="今回のカード枚数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNb-tO-blv">
+                                <rect key="frame" x="0.0" y="97" width="320" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="町：　虎：　侍：1 歌：1 貘：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4G-bx-na9">
+                                <rect key="frame" x="0.0" y="126" width="320" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="朝" id="w5S-cq-eYL"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="CardNumLabel" destination="R4G-bx-na9" id="j0E-Ue-oPS"/>
+                        <outlet property="TimerLabel" destination="DwC-Bl-5sn" id="RmU-mV-cmD"/>
+                        <outlet property="adview" destination="Ilq-zD-X4Q" id="mLD-SE-YTM"/>
+                        <segue destination="Ta0-T4-Vay" kind="show" id="iEU-NS-rzQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zag-RS-u2I" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2169" y="323"/>
+        </scene>
+        <!--処刑-->
+        <scene sceneID="ydb-dU-Dtq">
+            <objects>
+                <viewController storyboardIdentifier="ExecutionVC" id="Ta0-T4-Vay" customClass="ExecutionViewController" customModule="Jinro_Wa_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Sl-GJ-Je8"/>
+                        <viewControllerLayoutGuide type="bottom" id="L7X-jA-U8s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SFI-Bd-cM6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TtX-jd-mfY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="matsu_000.png" translatesAutoresizingMaskIntoConstraints="NO" id="N3B-mz-XDQ">
+                                        <rect key="frame" x="-449" y="0.0" width="927" height="536"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="matsu_000.png" translatesAutoresizingMaskIntoConstraints="NO" id="epC-kP-h0f">
+                                        <rect key="frame" x="-449" y="32" width="927" height="536"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0u-J1-sBg">
+                                <rect key="frame" x="110" y="373" width="101" height="57"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                <state key="normal" backgroundImage="btntemp.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnAction:" destination="Ta0-T4-Vay" eventType="touchUpInside" id="BW2-IQ-aVW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQM-wW-MuU">
+                                <rect key="frame" x="110" y="438" width="101" height="57"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                <state key="normal" backgroundImage="btntemp.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnAction:" destination="Ta0-T4-Vay" eventType="touchUpInside" id="Mzt-SY-MSP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gB-31-CvR">
+                                <rect key="frame" x="214" y="438" width="101" height="57"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                <state key="normal" backgroundImage="btntemp.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnAction:" destination="Ta0-T4-Vay" eventType="touchUpInside" id="xgQ-La-Mbf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GY-qH-xxd">
+                                <rect key="frame" x="6" y="438" width="101" height="57"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                <state key="normal" backgroundImage="btntemp.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnAction:" destination="Ta0-T4-Vay" eventType="touchUpInside" id="SbS-1M-Aet"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqh-ct-jsU">
+                                <rect key="frame" x="110" y="503" width="101" height="57"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                <state key="normal" backgroundImage="btntemp.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnAction:" destination="Ta0-T4-Vay" eventType="touchUpInside" id="4er-bB-hCl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="085-iB-zw8">
+                                <rect key="frame" x="214" y="503" width="101" height="57"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                <state key="normal" title="確定" backgroundImage="btntemp.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="FinishBtn:" destination="Ta0-T4-Vay" eventType="touchUpInside" id="cWi-Zx-LYQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eA-x3-AQr">
+                                <rect key="frame" x="6" y="503" width="101" height="57"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                <state key="normal" title="取り消し" backgroundImage="btntemp.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="CancelBtn:" destination="Ta0-T4-Vay" eventType="touchUpInside" id="sfg-hL-4AL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yb9-id-CF2">
+                                <rect key="frame" x="214" y="373" width="101" height="57"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                <state key="normal" backgroundImage="btntemp.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnAction:" destination="Ta0-T4-Vay" eventType="touchUpInside" id="OO2-ER-o5N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cts-ZX-ZFS">
+                                <rect key="frame" x="6" y="373" width="101" height="57"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                <state key="normal" backgroundImage="btntemp.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnAction:" destination="Ta0-T4-Vay" eventType="touchUpInside" id="dxl-BV-7zH"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZXm-kB-aQT">
+                                <rect key="frame" x="0.0" y="271" width="320" height="94"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRE-88-Fef">
+                                        <rect key="frame" x="8" y="57" width="86" height="37"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="13"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFf-ue-NVc">
+                                        <rect key="frame" x="117" y="57" width="86" height="37"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="13"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2q-aY-4Lc">
+                                        <rect key="frame" x="226" y="57" width="86" height="37"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="13"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="処刑者リスト" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bry-qB-fRR">
+                                        <rect key="frame" x="112" y="32" width="104" height="29"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="13"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="処刑する人を選んでください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFu-OV-y89">
+                                        <rect key="frame" x="32" y="8" width="264" height="21"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="0.83999999999999997" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardback.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dgt-B8-ui7">
+                                <rect key="frame" x="90" y="72" width="140" height="191"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="処刑" id="jDZ-0z-OVW"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="ExeText1" destination="ZRE-88-Fef" id="wC4-KX-Q2G"/>
+                        <outlet property="ExeText2" destination="rFf-ue-NVc" id="LPq-Fr-cB0"/>
+                        <outlet property="ExeText3" destination="x2q-aY-4Lc" id="CM7-7c-EBO"/>
+                        <outlet property="RoleImageView" destination="Dgt-B8-ui7" id="zFH-Cy-WrA"/>
+                        <outletCollection property="Buttons" destination="cts-ZX-ZFS" collectionClass="NSMutableArray" id="3ZC-h8-RyR"/>
+                        <outletCollection property="Buttons" destination="z0u-J1-sBg" collectionClass="NSMutableArray" id="vQG-Se-Mri"/>
+                        <outletCollection property="Buttons" destination="Yb9-id-CF2" collectionClass="NSMutableArray" id="awc-KO-9Fw"/>
+                        <outletCollection property="Buttons" destination="5GY-qH-xxd" collectionClass="NSMutableArray" id="zbf-de-RZ5"/>
+                        <outletCollection property="Buttons" destination="CQM-wW-MuU" collectionClass="NSMutableArray" id="n4T-QV-o2B"/>
+                        <outletCollection property="Buttons" destination="8gB-31-CvR" collectionClass="NSMutableArray" id="xst-9w-IKg"/>
+                        <outletCollection property="Buttons" destination="hqh-ct-jsU" collectionClass="NSMutableArray" id="vsY-eJ-rWW"/>
+                        <segue destination="15L-fb-1gR" kind="show" id="6wq-xh-N0t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eM4-jw-Cwt" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2550" y="323"/>
+        </scene>
+        <!--処刑-->
+        <scene sceneID="fvS-HI-7kd">
+            <objects>
+                <viewController storyboardIdentifier="ResultVC" id="15L-fb-1gR" customClass="ResultViewController" customModule="Jinro_Wa_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ilh-X2-OIt"/>
+                        <viewControllerLayoutGuide type="bottom" id="jWx-tA-k54"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Iv1-LE-Hma">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ydT-ng-IQw">
+                                <rect key="frame" x="0.0" y="0.0" width="326" height="570"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="matsu_000.png" translatesAutoresizingMaskIntoConstraints="NO" id="xJ7-5u-EAI">
+                                        <rect key="frame" x="-607" y="38" width="927" height="536"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FxM-9N-ov2">
+                                <rect key="frame" x="-3" y="64" width="326" height="504"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardback.png" translatesAutoresizingMaskIntoConstraints="NO" id="vWu-zI-ZBE">
+                                        <rect key="frame" x="8" y="40" width="92" height="122"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardback.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gyj-d4-iCU">
+                                        <rect key="frame" x="117" y="40" width="92" height="122"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardback.png" translatesAutoresizingMaskIntoConstraints="NO" id="9ee-EA-2Vc">
+                                        <rect key="frame" x="227" y="40" width="92" height="122"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="処刑者リスト" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oJ-DU-xBO">
+                                        <rect key="frame" x="8" y="11" width="310" height="21"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="プレイヤー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18i-Bm-ns8">
+                                        <rect key="frame" x="8" y="204" width="310" height="21"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yX1-D9-Izg">
+                                        <rect key="frame" x="8" y="170" width="92" height="21"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="12"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSf-v7-4o2">
+                                        <rect key="frame" x="117" y="170" width="92" height="21"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="12"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9z-6S-nwe">
+                                        <rect key="frame" x="227" y="170" width="92" height="21"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="12"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardback.png" translatesAutoresizingMaskIntoConstraints="NO" id="zAI-lq-jx0">
+                                        <rect key="frame" x="8" y="252" width="92" height="122"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardback.png" translatesAutoresizingMaskIntoConstraints="NO" id="GVy-qI-s6e">
+                                        <rect key="frame" x="117" y="252" width="92" height="122"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardback.png" translatesAutoresizingMaskIntoConstraints="NO" id="jtB-nq-s7d">
+                                        <rect key="frame" x="227" y="252" width="92" height="122"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K70-n2-WRA">
+                                        <rect key="frame" x="8" y="382" width="92" height="21"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="12"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fs4-iC-i6q">
+                                        <rect key="frame" x="117" y="382" width="92" height="21"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="12"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcC-EN-5Dh">
+                                        <rect key="frame" x="227" y="382" width="92" height="21"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="12"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardback.png" translatesAutoresizingMaskIntoConstraints="NO" id="OO0-PR-zOe">
+                                        <rect key="frame" x="7" y="432" width="92" height="122"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardback.png" translatesAutoresizingMaskIntoConstraints="NO" id="xef-bw-tqf">
+                                        <rect key="frame" x="116" y="432" width="92" height="122"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardback.png" translatesAutoresizingMaskIntoConstraints="NO" id="nWs-vd-OqZ">
+                                        <rect key="frame" x="226" y="432" width="92" height="122"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JsJ-Q5-7iW">
+                                        <rect key="frame" x="7" y="562" width="92" height="21"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="12"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpn-qa-oTD">
+                                        <rect key="frame" x="116" y="562" width="92" height="21"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="12"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDx-dQ-Orq">
+                                        <rect key="frame" x="226" y="562" width="92" height="21"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="12"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="winimg.png" translatesAutoresizingMaskIntoConstraints="NO" id="1AE-KY-5uL" userLabel="win1.png">
+                                        <rect key="frame" x="30" y="233" width="46" height="45"/>
+                                    </imageView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="winimg.png" translatesAutoresizingMaskIntoConstraints="NO" id="CZP-nd-7uK" userLabel="win1.png">
+                                        <rect key="frame" x="140" y="233" width="46" height="45"/>
+                                    </imageView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="winimg.png" translatesAutoresizingMaskIntoConstraints="NO" id="HzU-b9-0Ff" userLabel="win1.png">
+                                        <rect key="frame" x="250" y="233" width="46" height="45"/>
+                                    </imageView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="winimg.png" translatesAutoresizingMaskIntoConstraints="NO" id="IYh-Zz-0zA" userLabel="win1.png">
+                                        <rect key="frame" x="250" y="411" width="46" height="45"/>
+                                    </imageView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="winimg.png" translatesAutoresizingMaskIntoConstraints="NO" id="cg0-0J-ScW" userLabel="win1.png">
+                                        <rect key="frame" x="140" y="411" width="46" height="45"/>
+                                    </imageView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="winimg.png" translatesAutoresizingMaskIntoConstraints="NO" id="xNg-G9-vqj" userLabel="win1.png">
+                                        <rect key="frame" x="31" y="411" width="46" height="45"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardback.png" translatesAutoresizingMaskIntoConstraints="NO" id="imv-5H-Xk3">
+                                        <rect key="frame" x="116" y="612" width="92" height="122"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQJ-gR-iAE">
+                                        <rect key="frame" x="116" y="742" width="92" height="21"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="12"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="winimg.png" translatesAutoresizingMaskIntoConstraints="NO" id="ttA-RV-SW2" userLabel="win1.png">
+                                        <rect key="frame" x="140" y="591" width="46" height="45"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="処刑" id="aV2-QA-m6y">
+                        <barButtonItem key="rightBarButtonItem" title="終了" id="HUR-Fd-d58">
+                            <connections>
+                                <action selector="EndBtn:" destination="15L-fb-1gR" id="prC-3K-CgB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="scrollView" destination="FxM-9N-ov2" id="POQ-Zw-kvL"/>
+                        <outletCollection property="ExeImageViews" destination="vWu-zI-ZBE" collectionClass="NSMutableArray" id="okN-Um-TZ4"/>
+                        <outletCollection property="ExeImageViews" destination="Gyj-d4-iCU" collectionClass="NSMutableArray" id="8r1-K8-38n"/>
+                        <outletCollection property="ExeImageViews" destination="9ee-EA-2Vc" collectionClass="NSMutableArray" id="EUY-Js-BDm"/>
+                        <outletCollection property="ExeTextViews" destination="yX1-D9-Izg" collectionClass="NSMutableArray" id="QdS-fW-77v"/>
+                        <outletCollection property="ExeTextViews" destination="bSf-v7-4o2" collectionClass="NSMutableArray" id="U2l-aQ-cEk"/>
+                        <outletCollection property="ExeTextViews" destination="w9z-6S-nwe" collectionClass="NSMutableArray" id="hZ2-VM-Dcu"/>
+                        <outletCollection property="PlayerImageViews" destination="zAI-lq-jx0" collectionClass="NSMutableArray" id="N1T-pV-YD3"/>
+                        <outletCollection property="PlayerImageViews" destination="GVy-qI-s6e" collectionClass="NSMutableArray" id="WR7-y4-slB"/>
+                        <outletCollection property="PlayerImageViews" destination="jtB-nq-s7d" collectionClass="NSMutableArray" id="pqx-Mi-uhz"/>
+                        <outletCollection property="PlayerImageViews" destination="OO0-PR-zOe" collectionClass="NSMutableArray" id="UrY-U4-YAM"/>
+                        <outletCollection property="PlayerImageViews" destination="xef-bw-tqf" collectionClass="NSMutableArray" id="UOA-AV-ZvD"/>
+                        <outletCollection property="PlayerImageViews" destination="nWs-vd-OqZ" collectionClass="NSMutableArray" id="db5-Vq-bpQ"/>
+                        <outletCollection property="PlayerImageViews" destination="imv-5H-Xk3" collectionClass="NSMutableArray" id="p9w-oP-iZu"/>
+                        <outletCollection property="PlayerTextViews" destination="K70-n2-WRA" collectionClass="NSMutableArray" id="um4-gz-9hh"/>
+                        <outletCollection property="PlayerTextViews" destination="Fs4-iC-i6q" collectionClass="NSMutableArray" id="HwG-Kb-Tw4"/>
+                        <outletCollection property="PlayerTextViews" destination="OcC-EN-5Dh" collectionClass="NSMutableArray" id="rW0-Qf-eb3"/>
+                        <outletCollection property="PlayerTextViews" destination="JsJ-Q5-7iW" collectionClass="NSMutableArray" id="j91-rC-jUm"/>
+                        <outletCollection property="PlayerTextViews" destination="xpn-qa-oTD" collectionClass="NSMutableArray" id="LPF-9b-txU"/>
+                        <outletCollection property="PlayerTextViews" destination="RDx-dQ-Orq" collectionClass="NSMutableArray" id="4Et-eh-Ivo"/>
+                        <outletCollection property="PlayerTextViews" destination="cQJ-gR-iAE" collectionClass="NSMutableArray" id="Bks-zf-fuj"/>
+                        <outletCollection property="WinImages" destination="1AE-KY-5uL" collectionClass="NSMutableArray" id="JAq-3m-kfD"/>
+                        <outletCollection property="WinImages" destination="CZP-nd-7uK" collectionClass="NSMutableArray" id="4wm-nf-Mcy"/>
+                        <outletCollection property="WinImages" destination="HzU-b9-0Ff" collectionClass="NSMutableArray" id="otS-sT-EhI"/>
+                        <outletCollection property="WinImages" destination="xNg-G9-vqj" collectionClass="NSMutableArray" id="ttE-eV-m7T"/>
+                        <outletCollection property="WinImages" destination="cg0-0J-ScW" collectionClass="NSMutableArray" id="iza-oE-1n4"/>
+                        <outletCollection property="WinImages" destination="IYh-Zz-0zA" collectionClass="NSMutableArray" id="L9f-0K-dtU"/>
+                        <outletCollection property="WinImages" destination="ttA-RV-SW2" collectionClass="NSMutableArray" id="KrL-aD-E29"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gtp-Qr-YTW" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2909" y="323"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn3.png" width="300" height="253"/>
+        <image name="btn4.png" width="300" height="253"/>
+        <image name="btn5.png" width="300" height="253"/>
+        <image name="btn6.png" width="300" height="253"/>
+        <image name="btn7.png" width="300" height="253"/>
+        <image name="btntemp.png" width="300" height="253"/>
+        <image name="cardback.png" width="790" height="1050"/>
+        <image name="matsu_000.png" width="4369" height="2220"/>
+        <image name="rolebtn.png" width="800" height="253"/>
+        <image name="roledone.png" width="586" height="241"/>
+        <image name="settingend.png" width="800" height="253"/>
+        <image name="startbtn.png" width="800" height="253"/>
+        <image name="talkend.png" width="800" height="253"/>
+        <image name="winimg.png" width="253" height="253"/>
+    </resources>
 </document>
