@@ -282,7 +282,7 @@ class ActionViewController: UIViewController {
                 def.setObject(PlayerRoles, forKey: "PlayerRolesTraded")
                 def.synchronize()
                 
-                println("交換後:\(PlayerRoles)")
+                print("交換後:\(PlayerRoles)")
                 let alert = UIAlertView()
                 alert.title = "確認"
                 

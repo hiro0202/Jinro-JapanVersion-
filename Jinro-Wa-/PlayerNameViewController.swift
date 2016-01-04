@@ -46,16 +46,16 @@ class PlayerNameViewController: UIViewController,ADBannerViewDelegate {
         //UserDefaultsのユーザーネーム上書き
         let def = NSUserDefaults.standardUserDefaults()
         var PlayerNames:[NSString] = def.objectForKey("PlayerNames") as! [NSString]
-        PlayerNames[0] = PlayerName1.text
-        PlayerNames[1] = PlayerName2.text
-        PlayerNames[2] = PlayerName3.text
-        PlayerNames[3] = PlayerName4.text
-        PlayerNames[4] = PlayerName5.text
-        PlayerNames[5] = PlayerName6.text
-        PlayerNames[6] = PlayerName7.text
+        PlayerNames[0] = PlayerName1.text!
+        PlayerNames[1] = PlayerName2.text!
+        PlayerNames[2] = PlayerName3.text!
+        PlayerNames[3] = PlayerName4.text!
+        PlayerNames[4] = PlayerName5.text!
+        PlayerNames[5] = PlayerName6.text!
+        PlayerNames[6] = PlayerName7.text!
         def.setObject(PlayerNames, forKey: "PlayerNames")
         def.synchronize()
-        println(PlayerNames)
+        print(PlayerNames)
         
         //役職決定
         RoleSet()
@@ -207,8 +207,8 @@ class PlayerNameViewController: UIViewController,ADBannerViewDelegate {
             }
             
         }
-        println("余り: 村=\(Mura), 人狼=\(Jinro), 占い=\(Uranai), 怪盗=\(Kaito), てるてる=\(Teru)")
-        println(PlayerRoles)
+        print("余り: 村=\(Mura), 人狼=\(Jinro), 占い=\(Uranai), 怪盗=\(Kaito), てるてる=\(Teru)")
+        print(PlayerRoles)
         
         var LeftCards:[Int] = [Mura,Jinro,Uranai,Kaito,Teru]
         def.setObject(PlayerRoles, forKey: "PlayerRoles")

@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             //UserDefaultに初回起動時用のフラグを格納
             let defaults = NSUserDefaults.standardUserDefaults();
             var dic = ["TalkTime" : 5, "PlayerNum" : 3, "isShort" : false, "isTeruTeru" : true, "PlayerNames" : PlayerNames, "PlayerRoles" : PlayerRoles]
-            defaults.registerDefaults(dic as [NSObject : AnyObject])
+            defaults.registerDefaults(dic as! [String : AnyObject])
             
 
         return true

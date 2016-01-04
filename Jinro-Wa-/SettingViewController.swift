@@ -55,14 +55,14 @@ class SettingViewController: UIViewController,ADBannerViewDelegate{
         }
         defaults.setObject(TalkTime, forKey: "TalkTime")
         defaults.synchronize()
-        println(TalkTime);
+        print(TalkTime);
     }
 
             //プレイヤー人数
     @IBAction func PlayNumBtn(sender: UIButton) {
         let def = NSUserDefaults.standardUserDefaults()
         def.setObject(sender.tag, forKey: "PlayerNum")
-        println(sender.tag)
+        print(sender.tag)
         def.synchronize()
         
         //StoryBoardのIdentiferからViewControllerを作ってShow

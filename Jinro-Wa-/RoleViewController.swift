@@ -26,7 +26,7 @@ class RoleViewController: UIViewController {
         var PlayerNames:[NSString] = def.objectForKey("PlayerNames") as! [NSString]
         
         //アラート表示
-        println(Counter)
+        print(Counter)
         if(Counter < (def.objectForKey("PlayerNum") as! Int)){
             let alertController = UIAlertController(title: "確認", message: "あなたは\(PlayerNames[Counter] as NSString)ですか？", preferredStyle: .Alert)
             let otherAction = UIAlertAction(title: "はい", style: .Default) {
@@ -38,7 +38,7 @@ class RoleViewController: UIViewController {
             
         }else{
             //話し合い画面へ遷移
-            println("行動終了")
+            print("行動終了")
         }
     }
     

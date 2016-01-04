@@ -245,7 +245,7 @@ class ResultViewController: UIViewController {
         }
         
         
-        println("WinState = \(WinState) 0:村人 1:人狼 2:てるてる 3:無駄死に 4:平和")
+        print("WinState = \(WinState) 0:村人 1:人狼 2:てるてる 3:無駄死に 4:平和")
     }
     @IBAction func EndBtn(sender: AnyObject) {
         self.navigationController?.popToRootViewControllerAnimated(true)
